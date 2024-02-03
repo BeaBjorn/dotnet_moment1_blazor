@@ -1,0 +1,26 @@
+  /* ============ NAVIGATION STYLES ============= */
+  nav{
+    border: solid #1b263b 1px;
+    height: 100%;
+    padding-top: 2rem !important;
+  }
+  
+  li{
+    list-style: none;
+    background-color: #1b263b;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  li:hover{
+    background-color: #415a77;
+  }
+  
+  .navbar-toggle{
+    background-color: #1b263b;
+  }
+  
+  ul{
+    margin: 0 !important;
+    padding: 0 !important;
+  }

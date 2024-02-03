@@ -1,0 +1,24 @@
+<div class="px-2 py-4 box-border">
+    <h2 class="py-3">Convert kolimeters per hour to miles per hour</h2>
+    <div class="row d-flex align-items-center">
+        <span class="col-auto fs-5">km/h: <input class="" type="number" @bind="km" /></span>
+        <!-- Button that runs the function ConvertKm when clicked -->
+        <button class="col-3 btn col-11 col-sm-3 ms-2 ms-sm-0 mt-3 mt-sm-0 convert-button" @onclick="ConvertKm">Convert</button>
+    </div>
+    <!-- @km and @miles is used to print the their values to the screen -->
+    <p class="fs-4 mt-4 mb-2">@km kilometers per hour converted to miles = @miles miles per hour</p>
+</div>
+
+
+@code {
+    //Storing values for km and miles in variables
+    private double km;
+    private double miles;
+
+    // Function that converts the number entered in km to miles by multiplying this with 0.621371
+    // Math.Round is used to round the result to one decimal
+    private void ConvertKm()
+    {
+        miles = Math.Round(km * 0.621371, 1);
+    }
+}

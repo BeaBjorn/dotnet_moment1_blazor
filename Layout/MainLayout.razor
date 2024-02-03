@@ -1,0 +1,34 @@
+﻿@inherits LayoutComponentBase
+<div class="page">
+
+    <header class="container mt-5 mb-3 g-0">
+        <div class="row">
+            <!-- NavLink is used to make the logo link to the homepage -->
+            <NavLink class="navbar-brand ms-2 ms-sm-0 col" href="" Match="NavLinkMatch.All">
+                <img width="200" class="logo" src="/webbassemlogo.png" alt="blazor-logo">
+            </NavLink>
+            <!-- Print todays date to the screen in format yyy-mm-dd -->
+            <p class="col-auto mt-4 mt-sm-0 ms-2 text-md-end">Dagens datum: @DateTime.Now.ToString("yyyy-MM-dd")</p>
+        </div>
+    </header>
+    <div class="container g-0">
+        <div class="row">
+        <!-- Includes the NavMenu component -->
+            <NavMenu />
+
+            <main class="col-12 col-md-8 g-0 mb-5 ms-md-4">
+                <div class="mainContent mb-5">
+                    <article class="content px-4">
+                    <!-- Render body -->
+                         @Body
+                    </article>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+<footer class="border-top footer text-muted mt-5">
+    <div class="text-center small">
+        <p>Av Beatrice Björn - <br class="d-md-none" />kontakta mig via e-post: bebj2100@student.miun.se</p>
+    </div>
+</footer>

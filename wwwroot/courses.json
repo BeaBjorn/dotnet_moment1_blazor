@@ -1,0 +1,67 @@
+[
+    {
+        "Name": "Introduktion till programmering i JavaScript",
+        "Code": "DT084G",
+        "Hp": "7.5"
+    },
+    {
+        "Name": "Webbutveckling I",
+        "Code": "DT057G",
+        "Hp": "7.5"
+    },
+    {
+        "Name": "Digital bildbehandling för webb",
+        "Code": "DT163G",
+        "Hp": "7.5"
+    },
+    {
+        "Name": "Webbanvändbarhet",
+        "Code": "DT068G",
+        "Hp": "7.5"
+    },
+    {
+        "Name": "Webbutveckling II",
+        "Code": "DT093G",
+        "Hp": "7.5"
+    },
+    {
+        "Name": "Webbutveckling III",
+        "Code": "DT173G",
+        "Hp": "7.5"
+    },
+    {
+        "Name": "Webbdesign för CMS",
+        "Code": "DT197G",
+        "Hp": "7.5"
+    },
+    {
+        "Name": "Fullstack-utveckling med ramverk",
+        "Code": "DT193G",
+        "Hp": "7.5"
+    },
+    {
+        "Name": "Projektledning",
+        "Code": "IK060G",
+        "Hp": "7.5"
+    },
+    {
+        "Name": "Javascriptbaserad webbutveckling",
+        "Code": "DT162G",
+        "Hp": "7.5"
+    },
+    {
+        "Name": "Programmering i C#.NET",
+        "Code": "DT071G",
+        "Hp": "7.5"
+    },
+    {
+        "Name": "Databaser",
+        "Code": "DT003G",
+        "Hp": "7.5"
+    },
+    {
+        "Name": "Självständigt arbete",
+        "Code": "DT140G",
+        "Hp": "15"
+    }
+]

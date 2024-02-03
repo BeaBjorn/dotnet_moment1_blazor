@@ -1,0 +1,65 @@
+<!-- Route to courses page -->
+@page "/courses"
+
+<!-- Enabling HTTP requests -->
+@inject HttpClient Http
+
+<!-- Page title -->
+<PageTitle>Completed courses</PageTitle>
+
+<h1>Completed courses</h1>
+
+<!-- If statement checking if there is any data stored in the variable courses. 
+A message displays a message on screen if no courses are available.
+If there is data in the variable courses the data is rendered via a foreeach loop and printed to the screen in a table.  -->
+@if (courses == null)
+{
+    <p><em>No courses available...</em></p>
+}
+else
+{
+    <p class="fs-5 my-3">Courses I have completed over the passed two years: </p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Code</th>
+                <th>Hp</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var course in courses)
+            {
+                <tr>
+                    <td>@course.Name</td>
+                    <td>@course.Code</td>
+                    <td>@course.Hp</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+
+
+
+@code {
+    //Storing and array of courses in a variable called "courses".
+    private Course[]? courses;
+
+    //Http request to fetch json data from the file "courses.json"
+    protected override async Task OnInitializedAsync()
+    {
+        courses = await Http.GetFromJsonAsync<Course[]>("courses.json");
+    }
+
+    //Structure of the items in the "courses" array
+    public class Course
+    {
+        public string Name { get; set; }
+        public string Code { get; set; }
+        public string Hp { get; set; }
+    }
+}

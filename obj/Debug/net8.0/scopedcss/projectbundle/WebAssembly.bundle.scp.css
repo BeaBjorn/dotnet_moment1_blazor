@@ -1,0 +1,27 @@
+/* /Layout/NavMenu.razor.rz.scp.css */
+  /* ============ NAVIGATION STYLES ============= */
+  nav[b-1i2n3rymp2]{
+    border: solid #1b263b 1px;
+    height: 100%;
+    padding-top: 2rem !important;
+  }
+  
+  li[b-1i2n3rymp2]{
+    list-style: none;
+    background-color: #1b263b;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  li:hover[b-1i2n3rymp2]{
+    background-color: #415a77;
+  }
+  
+  .navbar-toggle[b-1i2n3rymp2]{
+    background-color: #1b263b;
+  }
+  
+  ul[b-1i2n3rymp2]{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
