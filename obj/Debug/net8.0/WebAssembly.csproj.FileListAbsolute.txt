@@ -1028,3 +1028,4 @@
 /Users/beatricebjorn/Desktop/year_two/dotnet/moment1/WebAssembly/obj/Debug/net8.0/refint/WebAssembly.dll
 /Users/beatricebjorn/Desktop/year_two/dotnet/moment1/WebAssembly/obj/Debug/net8.0/WebAssembly.pdb
 /Users/beatricebjorn/Desktop/year_two/dotnet/moment1/WebAssembly/obj/Debug/net8.0/ref/WebAssembly.dll
+/Users/beatricebjorn/Desktop/year_two/dotnet/moment1/WebAssembly/obj/Debug/net8.0/WebAssembly.sourcelink.json
